@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+*{
+  font-family: 'Belanosima', sans-serif;
+}
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+.container-input{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-info{
+    display: block;
+    justify-content: center;
+}
+
+.container-tree{
+    width: auto;
+    height: 100vh;
+}
+
+/*Agregar btn*/
+.btn-agregar {
+    width: 25vh;
+    height: 45px;
+    background: #74C88A;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #075233;
+    font-weight: 600;
+  }
+  
+  .btn-agregar:hover {
+    color: #74C88A;
+    background-color: #075233;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-agregar:not(hover) {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+
+  /*Eliminar btn*/
+  .btn-eliminar {
+    width: 25vh;
+    height: 45px;
+    background: #c87474;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #4B0D0D;
+    font-weight: 600;
+  }
+  
+  .btn-eliminar:hover {
+    color: #c87474;
+    background-color: #4B0D0D;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-eliminar:not(hover) {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+
+  /*Buscar btn*/
+  .btn-buscar {
+    width: 25vh;
+    height: 45px;
+    background: #7488C8;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #071952;
+    font-weight: 600;
+  }
+  
+  .btn-buscar:hover {
+    color: #7488C8;
+    background-color: #071952;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-buscar:not(hover) {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+
+  /*Input*/
+  .input-box input {
+    width: 30%;
+    height: 100%;
+    background-color: #474E68;
+    border: none;
+    outline: none;
+    border: 2px solid #474E68;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #B9B4C7;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #B9B4C7;
+}
+
+.input-box input:focus {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.input-box input:not(focus) {
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+/* custom-tree.css */
+circle{
+  fill: #0CAE5B;
+  stroke: #0CAE5B;
+}
+
+.rd3t-link{
+  stroke: #A67B51 !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rd3t-label__title{
+  fill: white !important;
+}
