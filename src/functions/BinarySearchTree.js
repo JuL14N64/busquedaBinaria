@@ -1,4 +1,3 @@
-import React from 'react';
 
 function BinarySearchTree() {
     this.root = null;

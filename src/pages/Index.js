@@ -1,12 +1,11 @@
 import React from 'react';
 import { Tree } from 'react-d3-tree';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import BinarySearchTree from '../functions/BinarySearchTree';
 import '../styles/index.css';
 
 function Index() {
-
-    const [tree, setTree] = useState(new BinarySearchTree());
+    const [tree] = useState(new BinarySearchTree());
     const [nodeValue, setNodeValue] = useState('');
     const [treeData, setTreeData] = useState({});
 
@@ -25,6 +24,10 @@ function Index() {
             alert('Por favor, escribe algún valor.');
             return;
         }
+        if (!tree.contains(parseInt(nodeValue, 10))) {
+            alert('El valor no existe en el árbol.');
+            return;
+        }
         tree.remove(parseInt(nodeValue, 10));
         setTreeData(generateTreeData(tree.root));
         setNodeValue('');
@@ -35,7 +38,11 @@ function Index() {
             alert('Por favor, escribe algún valor.');
             return;
         }
-        alert(tree.contains(parseInt(nodeValue, 10)) ? 'El nodo existe' : 'El nodo no existe');
+        if (!tree.contains(parseInt(nodeValue, 10))) {
+            alert('El valor no existe en el árbol.');
+            return;
+        }
+        alert('El nodo existe');
         setNodeValue('');
     };
 

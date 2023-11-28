@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: #121212;
-    color: white;
+    background-color: #f3d5e9;
+    color: rgb(24, 1, 1);
 }
 
 .container-input{
@@ -29,19 +29,19 @@ body{
 .btn-agregar {
     width: 25vh;
     height: 45px;
-    background: #74C88A;
+    background: #ef09f7;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
-    color: #075233;
+    color: #0f0f0f;
     font-weight: 600;
   }
   
   .btn-agregar:hover {
-    color: #74C88A;
+    color: #e8ec0e;
     background-color: #075233;
     transform: scale(1.1);
     transition: all 0.3s ease;
@@ -56,7 +56,7 @@ body{
   .btn-eliminar {
     width: 25vh;
     height: 45px;
-    background: #c87474;
+    background: #f70808;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -83,7 +83,7 @@ body{
   .btn-buscar {
     width: 25vh;
     height: 45px;
-    background: #7488C8;
+    background: #f3b407;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -110,18 +110,18 @@ body{
   .input-box input {
     width: 30%;
     height: 100%;
-    background-color: #474E68;
+    background-color: #08ee3a;
     border: none;
     outline: none;
-    border: 2px solid #474E68;
+    border: 2px solid rgb(19, 65, 231);
     border-radius: 40px;
     font-size: 16px;
-    color: #B9B4C7;
+    color: #f9f9fc;
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: #B9B4C7;
+    color: #070214;
 }
 
 .input-box input:focus {
